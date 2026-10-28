@@ -1,0 +1,20 @@
+{
+  "name": "accessibility-visual-quality-gates",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright quality gates for accessibility, keyboard UX, ARIA structure, and visual regression.",
+  "scripts": {
+    "test": "playwright test",
+    "test:a11y": "playwright test tests/accessibility.spec.ts",
+    "test:visual": "playwright test tests/visual.spec.ts",
+    "check": "tsc --noEmit",
+    "serve": "node demo/server.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.64.1",
+    "@types/node": "26.6.5",
+    "typescript": "5.9.3"
+  }
+}

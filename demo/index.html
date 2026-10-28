@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Quality Gate Demo</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header><a class="brand" href="/">Pulse QA</a><nav aria-label="Primary"><a href="#overview">Overview</a><a href="#checks">Checks</a></nav></header>
+  <main id="main" tabindex="-1">
+    <section id="overview" aria-labelledby="page-title">
+      <p class="eyebrow">Release confidence</p>
+      <h1 id="page-title">Quality signals that everyone can use</h1>
+      <p>Automated checks should protect keyboard users, semantics, and visual intent—not only the happy path.</p>
+      <button id="details" aria-expanded="false" aria-controls="quality-details">Show quality details</button>
+      <div id="quality-details" hidden><p>Accessibility, keyboard, ARIA, and visual gates are active.</p></div>
+    </section>
+    <section id="checks" aria-labelledby="checks-title"><h2 id="checks-title">Active checks</h2><ul><li>WCAG scan</li><li>Keyboard flow</li><li>Visual baseline</li></ul></section>
+    <section aria-label="Visual regression fixture"><div class="visual-card" data-testid="visual-card" aria-hidden="true"><span></span><span></span><span></span></div></section>
+  </main>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
